@@ -50,6 +50,7 @@
 		4C01140B278E6C0A0079402A /* StartSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSwiftUIUITests.swift; sourceTree = "<group>"; };
 		4C01140D278E6C0A0079402A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C01141D278E6C850079402A /* Combine.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Combine.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		4CA0D7E6278E9C1B00B14267 /* URLSessionCombine.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = URLSessionCombine.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +142,7 @@
 		4C01141C278E6C310079402A /* PlayGround */ = {
 			isa = PBXGroup;
 			children = (
+				4CA0D7E6278E9C1B00B14267 /* URLSessionCombine.playground */,
 				4C01141D278E6C850079402A /* Combine.playground */,
 			);
 			path = PlayGround;

@@ -16,7 +16,7 @@ execution()
 /// 実行する!!!
 func execution(){
     // 実行する関数を書いてね
-    notificationCombine()
+    simpleCombine2()
 }
 
 /// JustとSinkを使用する!
@@ -103,3 +103,4 @@ func notificationCombine(){
                                     userInfo: ["result": 100])
     print("更新後の点数：\(testResult.score)")
 }
+
