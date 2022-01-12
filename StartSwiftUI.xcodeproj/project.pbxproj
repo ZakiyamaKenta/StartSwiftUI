@@ -49,6 +49,7 @@
 		4C011407278E6C0A0079402A /* StartSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StartSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C01140B278E6C0A0079402A /* StartSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSwiftUIUITests.swift; sourceTree = "<group>"; };
 		4C01140D278E6C0A0079402A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C01141D278E6C850079402A /* Combine.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Combine.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		4C0113DD278E6C080079402A = {
 			isa = PBXGroup;
 			children = (
+				4C01141C278E6C310079402A /* PlayGround */,
 				4C0113E8278E6C080079402A /* StartSwiftUI */,
 				4C0113FF278E6C0A0079402A /* StartSwiftUITests */,
 				4C01140A278E6C0A0079402A /* StartSwiftUIUITests */,
@@ -134,6 +136,14 @@
 				4C01140D278E6C0A0079402A /* Info.plist */,
 			);
 			path = StartSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		4C01141C278E6C310079402A /* PlayGround */ = {
+			isa = PBXGroup;
+			children = (
+				4C01141D278E6C850079402A /* Combine.playground */,
+			);
+			path = PlayGround;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
