@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct MainListView<VM: SampleDataViewModelProtcol>: View {
+struct MainListView: View {
     
     // @ObservedObjectをつけると、値の変化を自動的に監視してくれる
-    @ObservedObject var viewModel: VM
+    @ObservedObject var viewModel = SampleDataViewModel()
 
     var body: some View {
         List {

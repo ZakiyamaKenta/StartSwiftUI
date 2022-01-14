@@ -18,6 +18,7 @@
 		4C195CE5278EB9C000BBE0FD /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C195CE4278EB9C000BBE0FD /* MainListView.swift */; };
 		4C195CEA278EBBFC00BBE0FD /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C195CE9278EBBFC00BBE0FD /* SampleData.swift */; };
 		4C195CEF278EBC5200BBE0FD /* SampleDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C195CEE278EBC5200BBE0FD /* SampleDataViewModel.swift */; };
+		4C76A9C8279155B9002098F6 /* SimpleDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C76A9C7279155B9002098F6 /* SimpleDataRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		4C195CE4278EB9C000BBE0FD /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 		4C195CE9278EBBFC00BBE0FD /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		4C195CEE278EBC5200BBE0FD /* SampleDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleDataViewModel.swift; sourceTree = "<group>"; };
+		4C76A9C7279155B9002098F6 /* SimpleDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDataRepository.swift; sourceTree = "<group>"; };
 		4CA0D7E6278E9C1B00B14267 /* URLSessionCombine.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = URLSessionCombine.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
@@ -109,11 +111,12 @@
 			isa = PBXGroup;
 			children = (
 				4C0113E9278E6C080079402A /* AppDelegate.swift */,
+				4C76A9C527915577002098F6 /* ViewModels */,
+				4C76A9C42791555B002098F6 /* Entities */,
 				4C0113EB278E6C080079402A /* SceneDelegate.swift */,
+				4C76A9C627915591002098F6 /* Repositories */,
 				4C0113ED278E6C080079402A /* ContentView.swift */,
-				4C195CE4278EB9C000BBE0FD /* MainListView.swift */,
-				4C195CE9278EBBFC00BBE0FD /* SampleData.swift */,
-				4C195CEE278EBC5200BBE0FD /* SampleDataViewModel.swift */,
+				4C76A9C32791551B002098F6 /* Views */,
 				4C0113EF278E6C090079402A /* Assets.xcassets */,
 				4C0113F4278E6C090079402A /* LaunchScreen.storyboard */,
 				4C0113F7278E6C090079402A /* Info.plist */,
@@ -155,6 +158,38 @@
 				4C01141D278E6C850079402A /* Combine.playground */,
 			);
 			path = PlayGround;
+			sourceTree = "<group>";
+		};
+		4C76A9C32791551B002098F6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4C195CE4278EB9C000BBE0FD /* MainListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4C76A9C42791555B002098F6 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				4C195CE9278EBBFC00BBE0FD /* SampleData.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		4C76A9C527915577002098F6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4C195CEE278EBC5200BBE0FD /* SampleDataViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4C76A9C627915591002098F6 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				4C76A9C7279155B9002098F6 /* SimpleDataRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +324,7 @@
 			files = (
 				4C0113EA278E6C080079402A /* AppDelegate.swift in Sources */,
 				4C195CE5278EB9C000BBE0FD /* MainListView.swift in Sources */,
+				4C76A9C8279155B9002098F6 /* SimpleDataRepository.swift in Sources */,
 				4C195CEF278EBC5200BBE0FD /* SampleDataViewModel.swift in Sources */,
 				4C0113EC278E6C080079402A /* SceneDelegate.swift in Sources */,
 				4C195CEA278EBBFC00BBE0FD /* SampleData.swift in Sources */,

@@ -8,13 +8,9 @@
 import Foundation
 import Combine
 
-protocol SampleDataViewModelProtcol: ObservableObject {
-    var cancelabe: Set<AnyCancellable> { get set }
-    var sampleData: [LGTM] { get set }
-    func fetchData()
-}
-
-class SampleDataViewModel: SampleDataViewModelProtcol, ObservableObject {
+final class SampleDataViewModel: ObservableObject {
+    var repository: DataRepository = DataRepository()
+    
     // disposedBagと同じ役割、監視を解除しておくために必要
     var cancelabe = Set<AnyCancellable>()
     
@@ -22,18 +18,7 @@ class SampleDataViewModel: SampleDataViewModelProtcol, ObservableObject {
     @Published var sampleData: [LGTM] = []
 
     func fetchData() {
-        let url = URL(string: "https://qiita.com/api/v2/items/a9ead7285d10aadf5643/likes")!
-        let request = URLRequest(url: url)
-
-        URLSession.shared.dataTaskPublisher(for: request)
-            .tryMap{ element in
-                guard let httpResponse = element.response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
-                    throw URLError(.badServerResponse)
-                }
-                return element.data
-            }
-            .decode(type: [LGTM].self, decoder: JSONDecoder())
-            .receive(on: DispatchQueue.main)
+        repository.fetch()
             .sink(receiveCompletion: { status in
                 switch status {
                 case .failure(let error):
@@ -49,4 +34,3 @@ class SampleDataViewModel: SampleDataViewModelProtcol, ObservableObject {
             .store(in: &cancelabe)  // cancelableを保存する
     }
 }
-
